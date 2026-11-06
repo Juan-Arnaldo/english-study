@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mis notas · My English Journey</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/theme.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap"><a class="back" href="index.html">← Inicio</a></div>
+  </header>
+
+  <main class="wrap tema">
+    <p class="eyebrow">Cuaderno</p>
+    <h1>Mis notas</h1>
+    <p class="muted">Correcciones de la profe, dudas, frases útiles… todo lo que quieras recordar.</p>
+
+    <form id="noteform" class="noteform">
+      <textarea id="notetext" rows="4" placeholder="Escribe tu nota…  Ej: La profe corrigió: ✗ I am agree → ✓ I agree" required></textarea>
+      <div class="row">
+        <select id="notetag" aria-label="Tipo de nota">
+          <option value="profe">Corrección de la profe</option>
+          <option value="gramatica">Gramática</option>
+          <option value="vocab">Vocabulario</option>
+          <option value="otro">Otro</option>
+        </select>
+        <button class="btn" type="submit" id="notesubmit">Guardar nota</button>
+        <button class="btn ghost" type="button" id="notecancel" hidden>Cancelar</button>
+      </div>
+    </form>
+
+    <div class="filters" id="filters" role="group" aria-label="Filtrar notas"></div>
+    <ul id="notes" class="notes"></ul>
+  </main>
+
+  <footer class="wrap muted foot">Tus notas se guardan en este navegador, solo para ti.</footer>
+  <script src="js/notas.js"></script>
+</body>
+</html>

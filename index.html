@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My English Journey</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/theme.js"></script>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Pre-intermediate</p>
+      <h1>My English Journey</h1>
+      <p class="lead">Mis apuntes, tiempos verbales y práctica en un solo lugar.</p>
+      <a class="btn" href="#estudiar">Empezar a estudiar</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card" aria-labelledby="t-prog">
+      <h2 id="t-prog">Mi progreso</h2>
+      <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" id="bar"><span id="barfill"></span></div>
+      <p id="progtext" class="muted"></p>
+    </section>
+
+    <section id="estudiar" aria-labelledby="t-est">
+      <h2 id="t-est">Estudiar</h2>
+      <div class="tabs" role="tablist">
+        <button role="tab" data-view="tenses" aria-selected="true">Gramática</button>
+        <button role="tab" data-view="files" aria-selected="false">Por unidad (File)</button>
+      </div>
+      <div id="view"></div>
+    </section>
+
+    <section class="card" aria-labelledby="t-notes">
+      <h2 id="t-notes">Mis notas</h2>
+      <p class="muted" id="notescount"></p>
+      <ul id="noteslist" class="noteslist"></ul>
+      <a class="btn" href="notas.html">Abrir mis notas</a>
+    </section>
+
+    <section class="card soon">
+      <h2>Próximamente</h2>
+      <p class="muted">Vocabulario por unidad · Flashcards · Quizzes · Recursos</p>
+    </section>
+  </main>
+
+  <footer class="wrap muted foot">Hecho para estudiar y compartir. Notas con mis propias palabras.</footer>
+
+  <script src="data/content.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
